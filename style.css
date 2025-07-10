@@ -1,0 +1,52 @@
+:root {
+  --color-body-background: rgb(236, 234, 215);
+  --color-text: rgb(47, 51, 58);
+}
+* {
+  margin: 0;
+  padding: 0;
+  /* border: 1px dashed rgb(0, 98, 255); */
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  background-color: var(--background-color);
+  color: var(--color-text);
+  font-size: 14px;
+  font-family: "Share Tech Mono", monospace;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.navlinks {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+main {
+  padding: 1rem;
+}
