@@ -1,11 +1,10 @@
 :root {
-  --color-body-background: rgb(227, 221, 191);
+  --color-body-background: rgb(238, 235, 218);
   --color-text: rgb(47, 51, 58);
 }
 * {
   margin: 0;
   padding: 0;
-  /* border: 1px dashed rgb(0, 98, 255); */
 }
 *,
 *::before,
@@ -17,9 +16,9 @@ ol {
   list-style: none;
 }
 a {
-  text-decoration: none;
   cursor: pointer;
   color: inherit;
+  text-underline-offset: 4px;
 }
 
 h1,
@@ -31,7 +30,9 @@ input {
   line-height: 1.1;
 }
 body {
-  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   line-height: 1.5;
   background-color: var(--color-body-background);
   color: var(--color-text);
@@ -54,25 +55,55 @@ header {
   flex-direction: row;
   gap: 2rem;
 }
+h1 {
+  font-size: inherit;
+}
 
-h1,
 h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 6rem;
   text-transform: lowercase;
-  margin: 0 0 1rem 0;
 }
 h2 {
-  text-align: end;
+}
+h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 0.5rem 0;
+}
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.hero {
+  flex: 1;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  /* min-height: 100vh; */
+}
+.hero:last-child {
+  justify-self: end;
+}
+/* OBS! Help border */
+.hero > * {
+  /* border: 1px dashed rgb(0, 98, 255); */
+}
+.hero-image {
+  background-color: rgb(173, 173, 173);
+  border-radius: 0.4em;
+  overflow: hidden;
+  border: 1.5px solid var(--color-text);
+}
+.projects {
+  height: 100vh;
+}
+/* OBS! Help border */
+.projects > * {
+  border: 1px dashed rgb(255, 0, 0);
 }
 
-main {
+.project {
   display: grid;
-  grid-row: 1fr 1fr 1fr;
-  padding: 0 1rem;
-}
-.image-container {
-  background-color: rgb(173, 173, 173);
-  width: 50vw;
-  height: 200px;
+  grid-template-columns: 1fr 1fr;
 }

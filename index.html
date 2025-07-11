@@ -7,22 +7,62 @@
   </head>
   <body>
     <header>
-      <h4 class="header-title">Matilda Bengtsson</h4>
+      <h1 class="header-title">Matilda Bengtsson</h1>
       <nav class="navbar">
         <ul class="navlinks">
-          <li><a href="#">Work</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#">About me</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h1>Creative Frontend <br />Developer</h1>
-      <div class="image-container">image<img src="" alt="" /></div>
-      <h2>
-        Matilda <br />
-        Bengtsson
-      </h2>
+      <section class="hero" id="hero">
+        <h2 class="hero-title">Creative <br />Frontend Developer</h2>
+        <div class="hero-image">image<img src="" alt="" /></div>
+        <h2 class="hero-title">
+          Matilda <br />
+          Bengtsson
+        </h2>
+      </section>
+
+      <section class="projects" id="portfolio">
+        <h2>projects</h2>
+        <article class="project">
+          <div class="project-text">
+            <h3 class="project-title">1. Groob - A secure e-commerce</h3>
+            <p class="project-description">
+              Public guests can browse and get an overview of the products on
+              the home page, while registered members can access detailed
+              information about the products. Admins have extended permissions
+              and a special page to manage users and products. For example, they
+              can change a user's role or add a new product. The platform has
+              strict authentication and authorization to ensure security for
+              members and admins.
+            </p>
+            <h4>Project links</h4>
+            <ul class="project-links">
+              <li>
+                <a href="https://github.com/m-bengtsson/groob-frontend">
+                  Github frontend repository</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/m-bengtsson/groob-backend"
+                  >Github backend repository</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="image-container">
+            <img
+              src="/images/groob-homepage.png"
+              alt="modern-ecommerce-homepage"
+              width="100%"
+            />
+          </div>
+        </article>
+      </section>
     </main>
   </body>
 </html>
