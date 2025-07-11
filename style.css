@@ -1,5 +1,5 @@
 :root {
-  --color-body-background: rgb(236, 234, 215);
+  --color-body-background: rgb(227, 221, 191);
   --color-text: rgb(47, 51, 58);
 }
 * {
@@ -33,7 +33,7 @@ input {
 body {
   min-height: 100vh;
   line-height: 1.5;
-  background-color: var(--background-color);
+  background-color: var(--color-body-background);
   color: var(--color-text);
   font-size: 14px;
   font-family: "Share Tech Mono", monospace;
